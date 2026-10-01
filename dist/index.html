@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Taiwan academic events in mathematics, physics and astronomy.">
+  <title>臺灣學術活動週覽</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <div class="eyebrow">TAIWAN SCIENCE AGENDA</div>
+      <h1 data-i18n="title">臺灣學術活動週覽</h1>
+      <p class="subtitle" data-i18n="subtitle">數學、物理與天文的近期學術活動。</p>
+    </div>
+    <div class="header-actions">
+      <button id="langToggle" type="button" aria-label="Switch language">English</button>
+      <span class="tz">UTC+8</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Filters">
+      <label>
+        <span data-i18n="range">範圍</span>
+        <select id="rangeFilter">
+          <option value="upcoming" data-i18n="upcoming">未來七天</option>
+          <option value="recent" data-i18n="recent">最近七天</option>
+        </select>
+      </label>
+      <label>
+        <span data-i18n="institution">機構</span>
+        <select id="sourceFilter"><option value="all" data-i18n="allInstitutions">全部機構</option></select>
+      </label>
+      <label class="search-box">
+        <span data-i18n="search">搜尋</span>
+        <input id="searchInput" type="search" autocomplete="off">
+      </label>
+    </section>
+
+    <section class="meta" id="meta" aria-live="polite"></section>
+    <section id="notice" class="notice" hidden></section>
+    <section id="events" class="events" aria-live="polite"></section>
+    <section class="sources-panel">
+      <h2 data-i18n="sourceStatus">來源狀態</h2>
+      <div id="sources"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span data-i18n="footer">活動資訊以原始機構公告為準。</span>
+  </footer>
+</body>
+</html>
