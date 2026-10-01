@@ -9,7 +9,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -19,14 +20,32 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Find latest successful event data
+        id: saved-data
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const findEventData = require('./.github/scripts/find-event-data.cjs');
+            await findEventData({github, context, core});
+
+      - name: Restore saved event data
+        if: steps.saved-data.outputs.found == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.saved-data.outputs.artifact-id }}
+          run-id: ${{ steps.saved-data.outputs.run-id }}
+          github-token: ${{ github.token }}
+          path: dist/data
+          merge-multiple: true
 
       - name: Set up Python
-        if: github.event_name != 'push'
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
@@ -36,6 +55,16 @@ jobs:
         if: github.event_name != 'push'
         run: python -m pip install -r requirements.txt
 
+      - name: Run updater regression checks
+        if: github.event_name != 'push'
+        run: python -m unittest discover -s tests -v
+
+      - name: Check saved data selection
+        run: node --test tests/test_event_data.cjs
+
+      - name: Validate restored or initial JSON
+        run: python -m json.tool dist/data/events.json > /dev/null
+
       - name: Update event data
         if: github.event_name != 'push'
         env:
@@ -43,22 +72,25 @@ jobs:
           ASIAA_ACCESS_MODE: public-html
         run: python update_events.py --asiaa-access public-html
 
+      - name: Upload updater diagnostics
+        if: always() && github.event_name != 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: updater-diagnostics
+          path: reports/latest.json
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Validate generated JSON
-        if: github.event_name != 'push'
         run: python -m json.tool dist/data/events.json > /dev/null
 
-      - name: Commit refreshed data
-        if: github.event_name != 'push'
-        run: |
-          if git diff --quiet -- dist/data/events.json reports/latest.json; then
-            echo "No data changes to commit."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add dist/data/events.json reports/latest.json
-            git commit -m "chore: update event data"
-            git push
-          fi
+      - name: Save event data for the next run
+        uses: actions/upload-artifact@v4
+        with:
+          name: event-data
+          path: dist/data/events.json
+          if-no-files-found: error
+          retention-days: 90
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

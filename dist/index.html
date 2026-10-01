@@ -23,13 +23,13 @@
 
   <main>
     <section class="controls" aria-label="Filters">
-      <label>
-        <span data-i18n="range">範圍</span>
-        <select id="rangeFilter">
-          <option value="upcoming" data-i18n="upcoming">未來七天</option>
-          <option value="recent" data-i18n="recent">最近七天</option>
-        </select>
-      </label>
+      <div class="range-control">
+        <span id="rangeLabel" data-i18n="range">範圍</span>
+        <div class="range-toggle" role="group" aria-labelledby="rangeLabel">
+          <button type="button" data-range="upcoming" aria-pressed="true" data-i18n="upcoming">未來七天</button>
+          <button type="button" data-range="recent" aria-pressed="false" data-i18n="recent">過去七天</button>
+        </div>
+      </div>
       <label>
         <span data-i18n="institution">機構</span>
         <select id="sourceFilter"><option value="all" data-i18n="allInstitutions">全部機構</option></select>
@@ -40,13 +40,17 @@
       </label>
     </section>
 
-    <section class="meta" id="meta" aria-live="polite"></section>
-    <section id="notice" class="notice" hidden></section>
-    <section id="events" class="events" aria-live="polite"></section>
-    <section class="sources-panel">
-      <h2 data-i18n="sourceStatus">來源狀態</h2>
-      <div id="sources"></div>
-    </section>
+    <div class="agenda-layout">
+      <div class="agenda-main">
+        <section class="meta" id="meta" aria-live="polite"></section>
+        <section id="notice" class="notice" hidden></section>
+        <section id="events" class="events" aria-live="polite"></section>
+      </div>
+      <aside class="sources-panel" aria-labelledby="sourcesHeading">
+        <h2 id="sourcesHeading" data-i18n="sourceStatus">來源狀態</h2>
+        <div id="sources"></div>
+      </aside>
+    </div>
   </main>
 
   <footer>

@@ -1,5 +1,6 @@
 beautifulsoup4>=4.12,<5
 python-dateutil>=2.9,<3
-requests>=2.32,<3
+requests>=2.32.3,<3
 urllib3>=2.2,<3
 lzstring>=1.0.4,<2
+tzdata

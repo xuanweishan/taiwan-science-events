@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import re
+import ssl
 import sys
 import tempfile
 import time
@@ -24,11 +25,12 @@ from dateutil.rrule import rrulestr
 from lzstring import LZString
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from urllib3.util.ssl_ import create_urllib3_context
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo('Asia/Taipei')
 UA = 'TaiwanScienceAgenda/2.0 (public academic event index)'
-VERSION = '2.1.0'
+VERSION = '2.1.1'
 AS = 'https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088'
 SOURCES = [
     dict(id='ncts', name='國家理論科學中心', short_name='NCTS 數學組', url='https://ncts.ntu.edu.tw/',
@@ -98,11 +100,37 @@ def expand_recurrence(e, lower, upper):
         d+=timedelta(days=1)
     return result
 
+class AcademicTLSAdapter(HTTPAdapter):
+    """Compatibility for the observed TWCA chains missing a key identifier.
+
+    Keep CA, signature, expiry and hostname verification. Only relax strict
+    X.509 extension checks for these exact hosts, including robots.txt. Pool
+    selection runs again on redirects, so other destinations keep defaults.
+    """
+    COMPAT_HOSTS = frozenset({
+        'www.math.sinica.edu.tw', 'www.phys.ntu.edu.tw',
+        'phys.ntu.edu.tw', 'www.iams.sinica.edu.tw',
+    })
+
+    def __init__(self, *args, **kwargs):
+        self.compat_context = create_urllib3_context()
+        self.compat_context.verify_flags &= ~ssl.VERIFY_X509_STRICT
+        super().__init__(*args, **kwargs)
+
+    def build_connection_pool_key_attributes(self, request, verify, cert=None):
+        host_params, pool_kwargs = super().build_connection_pool_key_attributes(request, verify, cert)
+        parsed = urlparse(request.url)
+        if (parsed.scheme == 'https' and parsed.hostname in self.COMPAT_HOSTS
+                and parsed.port in (None, 443) and verify is not False):
+            pool_kwargs['ssl_context'] = self.compat_context
+        return host_params, pool_kwargs
+
+
 class Client:
     def __init__(self, delay=1.0):
         self.session=requests.Session()
         self.session.headers['User-Agent']=os.environ.get('CRAWLER_USER_AGENT',UA)
-        self.session.mount('https://',HTTPAdapter(max_retries=Retry(total=2,backoff_factor=1,status_forcelist=[429,500,502,503,504],allowed_methods=['GET'],respect_retry_after_header=True)))
+        self.session.mount('https://',AcademicTLSAdapter(max_retries=Retry(total=2,backoff_factor=1,status_forcelist=[429,500,502,503,504],allowed_methods=['GET'],respect_retry_after_header=True)))
         self.delay=delay;self.last={};self.robots={};self.cache={};self.requests=0
         self.http_log=[]
 
@@ -530,12 +558,16 @@ def refresh_preview(output,data):
     html=(dist/'index.html').read_text(encoding='utf-8')
     css=(dist/'style.css').read_text(encoding='utf-8')
     js=(dist/'app.js').read_text(encoding='utf-8')
-    original="const r=await fetch('data/events.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);data=await r.json();"
-    if original not in js:raise ValueError('app.js format changed; preview.html was not regenerated')
-    js=js.replace(original,'data=window.INITIAL_EVENTS;')
     boot='window.INITIAL_EVENTS='+json.dumps(data,ensure_ascii=False).replace('<','\\u003c')+';\n'
-    html=html.replace('<link rel="stylesheet" href="style.css">','<style>'+css+'</style>')
-    html=html.replace('<script src="app.js" defer></script>','')
+    document=BeautifulSoup(html,'html.parser')
+    style_link=document.find('link',href=lambda value: value in ('style.css','./style.css'))
+    script_link=document.find('script',src=lambda value: value in ('app.js','./app.js'))
+    if style_link is None or script_link is None:
+        raise ValueError('index.html must reference style.css and app.js')
+    style=document.new_tag('style');style.string=css
+    style_link.replace_with(style)
+    script_link.decompose()
+    html=str(document)
     html=html.replace('</body>','<script>'+boot+js.replace('</script','<\\/script')+'</script></body>')
     target=dist.parent/'preview.html'
     with tempfile.NamedTemporaryFile('w',encoding='utf-8',dir=target.parent,delete=False) as f:
