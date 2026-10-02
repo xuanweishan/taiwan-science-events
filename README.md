@@ -36,9 +36,22 @@ when deploying a code change.
 After JSON validation, the workflow saves `events.json` as `event-data` with
 90-day retention and deploys `dist/` through the Pages artifact. Repository or
 organization retention limits may shorten that period. Only snapshots from
-completed successful runs are used on subsequent runs. Failed updates leave the
+completed successful runs are used on subsequent runs. Updates that exit nonzero leave the
 previous Pages deployment and successful snapshot available; their diagnostic
 report is uploaded separately as `updater-diagnostics` with 30-day retention.
+
+The daily workflow uses `--allow-partial`: when a source fails but another source
+has usable pages, healthy sources are published and failed sources retain older
+records with `stale` markers and an `error` status. Actions logs show a warning;
+the report includes `failed_sources`, `degraded`, and `exit_code`. Such a run can
+complete successfully and its merged data becomes the next snapshot. If all
+sources fail, or preview generation fails, the updater still exits 2 and stops
+deployment. The default local CLI remains strict unless this flag is supplied.
+
+An HTTP 401/403 from `robots.txt` stops that source immediately; the collector
+does not treat access denial as an empty robots file or fetch its event pages.
+This may require the institution to allow GitHub-hosted runners; retaining older
+data does not restore live access to the blocked source.
 
 For the first run, or when all usable snapshots have expired or been deleted,
 the workflow logs a warning and uses the Git-tracked seed JSON. In that case,

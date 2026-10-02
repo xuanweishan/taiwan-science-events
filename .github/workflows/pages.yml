@@ -70,7 +70,7 @@ jobs:
         env:
           PYTHONUTF8: '1'
           ASIAA_ACCESS_MODE: public-html
-        run: python update_events.py --asiaa-access public-html
+        run: python update_events.py --asiaa-access public-html --allow-partial
 
       - name: Upload updater diagnostics
         if: always() && github.event_name != 'push'

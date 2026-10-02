@@ -30,7 +30,7 @@ from urllib3.util.ssl_ import create_urllib3_context
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo('Asia/Taipei')
 UA = 'TaiwanScienceAgenda/2.0 (public academic event index)'
-VERSION = '2.1.1'
+VERSION = '2.1.2'
 AS = 'https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088'
 SOURCES = [
     dict(id='ncts', name='國家理論科學中心', short_name='NCTS 數學組', url='https://ncts.ntu.edu.tw/',
@@ -53,6 +53,14 @@ def text(node):
 
 def dates(raw):
     """Parse dates only from an adapter's explicit event-date field."""
+    # Explicit month/day range with a trailing year; never infer a year.
+    numeric_range=re.fullmatch(r'\s*(\d{1,2})/(\d{1,2})\s*[-~–]\s*(?:(\d{1,2})/)?(\d{1,2}),?\s+(\d{4})\s*',raw)
+    if numeric_range:
+        month,day,end_month,end_day,year=numeric_range.groups()
+        start=date(int(year),int(month),int(day))
+        end=date(int(year),int(end_month or month),int(end_day))
+        if end<start:raise ValueError('ambiguous numeric date range or year boundary')
+        return start,end
     if re.search(r'Every\s+\w+day',raw,re.I):
         bounds=re.search(rf'from\s+({MONTH}\s+\d{{1,2}})\s+to\s+({MONTH}\s+\d{{1,2}}),?\s+(\d{{4}})',raw,re.I)
         if bounds:return parse_date(bounds[1]+', '+bounds[3]).date(),parse_date(bounds[2]+', '+bounds[3]).date()
@@ -126,12 +134,16 @@ class AcademicTLSAdapter(HTTPAdapter):
         return host_params, pool_kwargs
 
 
+class RobotsAccessDenied(PermissionError):
+    """The origin explicitly denied access to its robots directives."""
+
+
 class Client:
     def __init__(self, delay=1.0):
         self.session=requests.Session()
         self.session.headers['User-Agent']=os.environ.get('CRAWLER_USER_AGENT',UA)
         self.session.mount('https://',AcademicTLSAdapter(max_retries=Retry(total=2,backoff_factor=1,status_forcelist=[429,500,502,503,504],allowed_methods=['GET'],respect_retry_after_header=True)))
-        self.delay=delay;self.last={};self.robots={};self.cache={};self.requests=0
+        self.delay=delay;self.last={};self.robots={};self.robots_denied={};self.cache={};self.requests=0
         self.http_log=[]
 
     def _request(self,url):
@@ -156,11 +168,16 @@ class Client:
 
     def response(self,url):
         origin=f'{urlparse(url).scheme}://{urlparse(url).netloc}'
+        if origin in self.robots_denied:raise self.robots_denied[origin]
         if origin not in self.robots:
             rp=RobotFileParser()
             try: rp.parse(self._request(origin+'/robots.txt').text.splitlines())
             except requests.HTTPError as ex:
                 if ex.response.status_code==404: rp.parse([])
+                elif ex.response.status_code in (401,403):
+                    denied=RobotsAccessDenied(f'robots.txt HTTP {ex.response.status_code}: {origin}/robots.txt')
+                    self.robots_denied[origin]=denied
+                    raise denied from ex
                 else: raise RuntimeError(f'robots.txt HTTP {ex.response.status_code}: {origin}/robots.txt') from ex
             self.robots[origin]=rp
             self.delay=max(self.delay,rp.crawl_delay(UA) or rp.crawl_delay('*') or 0)
@@ -481,6 +498,10 @@ class Collector:
             except Exception as ex:
                 self.issue(url,f'{type(ex).__name__}: {str(ex)[:180]}')
                 self.pages.append(dict(url=url,status='failed'))
+                if isinstance(ex,RobotsAccessDenied):
+                    self.issue(url,'robots.txt 拒絕存取，已停止本來源；保留歷次活動並標記來源錯誤。')
+                    self.queue.clear()
+                    break
                 if isinstance(self.client,AsiaaPublicClient) and (
                     isinstance(ex,PermissionError) or
                     (isinstance(ex,requests.HTTPError) and ex.response is not None and ex.response.status_code in (401,403,429))):
@@ -584,6 +605,19 @@ def source_summary(result,previous,today):
                 recent_seven_days=count(today-timedelta(days=6),today),
                 upcoming_seven_days=count(today,today+timedelta(days=6)))
 
+def failed_sources(results):
+    return [r['source']['id'] for r in results
+            if r['status']=='error' or any(p['status']=='failed' for p in r['pages'])]
+
+
+def update_exit_code(results,preview_error,allow_partial=False):
+    if preview_error:return 2
+    if not failed_sources(results):return 0
+    # Publish degraded data only if at least one selected source was usable.
+    usable=any(r['status']!='error' and any(p['status']=='fetched' for p in r['pages']) for r in results)
+    return 0 if allow_partial and usable else 2
+
+
 def main():
     # Windows redirected logs must not fail on non-CP950 characters in titles/URLs.
     for stream in (sys.stdout,sys.stderr):
@@ -595,6 +629,8 @@ def main():
     ap.add_argument('--report',type=Path,default=ROOT/'reports/latest.json')
     ap.add_argument('--workers',type=int,default=3)
     ap.add_argument('--max-pages',type=int,default=35)
+    ap.add_argument('--allow-partial',action='store_true',
+                    help='publish successful sources and retained stale data when some sources fail; all-source and preview failures still exit 2')
     ap.add_argument('--only',nargs='+',choices=[s['id'] for s in SOURCES],help='update selected institutions while retaining the others')
     ap.add_argument('--asiaa-access',choices=['robots','public-html'],default=os.environ.get('ASIAA_ACCESS_MODE','robots'),
                     help='robots enforces robots.txt (default); public-html explicitly fetches only allowlisted public ASIAA pages and records robots directives')
@@ -616,9 +652,12 @@ def main():
     try:preview=refresh_preview(args.output,data)
     except Exception as ex:preview_error=f'{type(ex).__name__}: {ex}'
     summaries={r['source']['id']:source_summary(r,previous,today) for r in results}
+    failures=failed_sources(results)
+    exit_code=update_exit_code(results,preview_error,args.allow_partial)
     atomic_json(args.report,dict(generated_at=now,completed_at=datetime.now(TZ).isoformat(timespec='seconds'),
         version=VERSION,python_version=sys.version.split()[0],platform=sys.platform,
         effective_date=today.isoformat(),output=str(args.output),asiaa_access=args.asiaa_access,
+        allow_partial=args.allow_partial,failed_sources=failures,degraded=bool(failures),exit_code=exit_code,
         selected_sources=[s['id'] for s in selected],preview=str(preview) if preview else None,preview_error=preview_error,
         sources=[{k:v for k,v in r.items() if k not in ('events','source')}|{'id':r['source']['id'],'events':len(r['events']),**summaries[r['source']['id']]} for r in results]))
     for r in results:
@@ -628,8 +667,12 @@ def main():
     print(f'Updated JSON: {args.output}',flush=True)
     print(f'Updated offline preview: {preview}' if preview else 'Offline preview not updated: '+(preview_error or 'website assets not found next to output; inspect the JSON output path.'),flush=True)
     print(f'Diagnostic report: {args.report}',flush=True)
-    # Network / parser failures cause the daily workflow to report failure after
-    # publishing honest health information. Known coverage limitations are partial.
-    return 2 if preview_error or any(r['status']=='error' or any(p['status']=='failed' for p in r['pages']) for r in results) else 0
+    if failures:
+        message='Source failures: '+', '.join(failures)+'. '+(
+            'Publishing available data; failed sources retain stale records and error status.' if exit_code==0
+            else 'Deployment stopped under the configured failure policy.')
+        prefix='::warning::' if os.environ.get('GITHUB_ACTIONS')=='true' else 'WARNING: '
+        print(prefix+message,flush=True)
+    return exit_code
 
 if __name__=='__main__':raise SystemExit(main())
