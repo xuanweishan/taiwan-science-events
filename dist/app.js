@@ -1,7 +1,7 @@
 'use strict';
 const I18N={
- zh:{title:'臺灣學術活動週覽',subtitle:'數學、物理與天文的近期學術活動。',range:'範圍',upcoming:'未來七天',recent:'過去七天',institution:'機構',allInstitutions:'全部機構',search:'搜尋',sourceStatus:'來源狀態',footer:'活動資訊以原始機構公告為準。',events:'筆活動',generated:'資料產生',noEvents:'此篩選條件下沒有活動。',partial:'部分來源未完整更新，請查看來源狀態。',recurring:'定期活動',today:'今天'},
- en:{title:'Taiwan Science Agenda',subtitle:'Recent academic events in mathematics, physics and astronomy.',range:'Range',upcoming:'Next 7 days',recent:'Past 7 days',institution:'Institution',allInstitutions:'All institutions',search:'Search',sourceStatus:'Source status',footer:'Please refer to the original institution announcement for authoritative event information.',events:'events',generated:'Generated',noEvents:'No events match these filters.',partial:'Some sources were not fully updated. See source status.',recurring:'Recurring',today:'Today'}
+ zh:{title:'臺灣學術活動週覽',subtitle:'數學、物理與天文的近期學術活動。',range:'範圍',upcoming:'未來七天',recent:'過去七天',institution:'機構',allInstitutions:'全部機構',search:'搜尋',sourceStatus:'來源狀態',footer:'活動資訊以原始機構公告為準。',events:'筆活動',generated:'資料產生',noEvents:'此篩選條件下沒有活動。',partial:'部分來源未完整更新，請查看來源狀態。',recurring:'定期活動',today:'今天',backToTop:'回到頂部'},
+ en:{title:'Taiwan Science Agenda',subtitle:'Recent academic events in mathematics, physics and astronomy.',range:'Range',upcoming:'Next 7 days',recent:'Past 7 days',institution:'Institution',allInstitutions:'All institutions',search:'Search',sourceStatus:'Source status',footer:'Please refer to the original institution announcement for authoritative event information.',events:'events',generated:'Generated',noEvents:'No events match these filters.',partial:'Some sources were not fully updated. See source status.',recurring:'Recurring',today:'Today',backToTop:'Back to top'}
 };
 const SOURCE_NAMES_EN={
  ncts:{short:'NCTS Mathematics',name:'National Center for Theoretical Sciences — Mathematics Division'},
@@ -30,3 +30,10 @@ function render(){if(!data)return;populateSources();const q=$('searchInput').val
 async function loadEvents(){if(window.INITIAL_EVENTS!==undefined)return window.INITIAL_EVENTS;const r=await fetch('./data/events.json',{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}
 async function boot(){applyI18n();try{data=await loadEvents();render()}catch(err){$('events').textContent='Unable to load event data: '+err.message}}
 $('langToggle').addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';localStorage.setItem('lang',lang);applyI18n();render()});document.querySelectorAll('[data-range]').forEach(button=>button.addEventListener('click',()=>{rangeMode=button.dataset.range;document.querySelectorAll('[data-range]').forEach(option=>option.setAttribute('aria-pressed',String(option===button)));render()}));for(const id of ['sourceFilter','searchInput'])$(id).addEventListener(id==='searchInput'?'input':'change',render);boot();
+
+$('backToTop').addEventListener('click',()=>{window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});
+
+function updateBackToTop(){ $('backToTop').hidden=window.scrollY<=100; }
+window.addEventListener('scroll',updateBackToTop,{passive:true});
+window.addEventListener('pageshow',updateBackToTop);
+updateBackToTop();
