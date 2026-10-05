@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "timezone": "Asia/Taipei",
-  "generated_at": "2026-10-02T09:59:01+08:00",
+  "generated_at": "2026-10-05T14:49:09+08:00",
   "window": {
-    "retained_from": "2026-08-18",
-    "retained_through": "2026-11-16"
+    "retained_from": "2026-08-21",
+    "retained_through": "2026-11-19"
   },
   "sources": [
     {
@@ -12,11 +12,11 @@
       "name": "國家理論科學中心",
       "short_name": "NCTS 數學組",
       "url": "https://ncts.ntu.edu.tw/",
-      "status": "partial",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "status": "ok",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 8,
-      "message": "未找到預期活動結構，需檢查網站改版或空清單。"
+      "message": "已檢查 8 個來源頁面。"
     },
     {
       "id": "as_math",
@@ -24,9 +24,9 @@
       "short_name": "中研院數學所",
       "url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088",
       "status": "partial",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
-      "pages": 5,
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
+      "pages": 6,
       "message": "無法確認活動日期： (no explicit event date)"
     },
     {
@@ -35,8 +35,8 @@
       "short_name": "臺大物理系",
       "url": "https://www.phys.ntu.edu.tw/Default.html",
       "status": "partial",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 1,
       "message": "目前已驗證學術演講清單；學術活動及系所活動公告尚待個別日期規則驗證。"
     },
@@ -46,8 +46,8 @@
       "short_name": "臺大數學系",
       "url": "https://www.math.ntu.edu.tw/",
       "status": "ok",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 10,
       "message": "已檢查 10 個來源頁面。"
     },
@@ -57,8 +57,8 @@
       "short_name": "臺大天文所",
       "url": "https://phys.ntu.edu.tw/astro/",
       "status": "ok",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 1,
       "message": "已檢查 1 個來源頁面。"
     },
@@ -68,8 +68,8 @@
       "short_name": "中研院天文所",
       "url": "https://www.asiaa.sinica.edu.tw/",
       "status": "ok",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 4,
       "message": "已檢查 4 個來源頁面。 公開 HTML 模式；robots.txt 指示另見執行報告。",
       "access_mode": "public-html"
@@ -80,8 +80,8 @@
       "short_name": "LeCosPA",
       "url": "https://www.lecospa.ntu.edu.tw/",
       "status": "ok",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 4,
       "message": "已檢查 4 個來源頁面。"
     },
@@ -91,8 +91,8 @@
       "short_name": "中研院原分所",
       "url": "https://www.iams.sinica.edu.tw/",
       "status": "partial",
-      "last_attempt": "2026-10-02T09:59:01+08:00",
-      "last_success": "2026-10-02T09:59:01+08:00",
+      "last_attempt": "2026-10-05T14:49:09+08:00",
+      "last_success": "2026-10-05T14:49:09+08:00",
       "pages": 1,
       "message": "頁面主要提供未來活動；最近七天需依歷次成功擷取累積。"
     }
@@ -113,65 +113,8 @@
       "raw_date": "2026-06-29~2026-08-21",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "44d99c7ee7899e744655"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Quantum Fields in Curved Spacetime (Daniel Baumann)",
-      "start_date": "2026-08-18",
-      "end_date": "2026-08-18",
-      "start_time": "10:15",
-      "end_time": "12:15",
-      "speaker": "",
-      "location": "7W3",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-18 ~ 2026-08-18",
-      "recurring": true,
-      "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "57e41c359808689b9ede"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Journal Club",
-      "start_date": "2026-08-18",
-      "end_date": "2026-08-18",
-      "start_time": "11:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8W1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-18 ~ 2026-08-18",
-      "recurring": true,
-      "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "6573699e297118a72769"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Advanced General Relativity(Chia-Hsien Shen)",
-      "start_date": "2026-08-18",
-      "end_date": "2026-08-18",
-      "start_time": "13:15",
-      "end_time": "16:15",
-      "speaker": "",
-      "location": "7W3",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-18 ~ 2026-08-18",
-      "recurring": true,
-      "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "9ba516014c4ae464d16e"
     },
     {
       "source_id": "ncts",
@@ -188,82 +131,8 @@
       "raw_date": "August 18 - 21, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b191fd5a4438f0a7cac6"
-    },
-    {
-      "source_id": "as_math",
-      "title": "Schwartz Algebra Structures in Smooth Casselman-Jacquet Theory",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-19",
-      "start_time": "10:00",
-      "end_time": "11:30",
-      "speaker": "Kei Yuen Chan (University of Hong Kong)",
-      "location": "Seminar Room 638, Institute of Mathematics (NTU Campus)",
-      "url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16062",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "2026/08/19 (Wed.) 10:00~11:30",
-      "recurring": false,
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "91f3aa8ad65dc3a2f010"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Coffee",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-19",
-      "start_time": "10:00",
-      "end_time": "11:00",
-      "speaker": "",
-      "location": "7F Lobby",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-19 ~ 2026-08-19",
-      "recurring": true,
-      "calendar_event_id": "3t0gb62hamckor08djogas95ek",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "918ede92fb1eb630860a"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "self-exploratory experimental physics (Ⅰ)  (Nam)",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-19",
-      "start_time": "14:15",
-      "end_time": "17:15",
-      "speaker": "",
-      "location": "7W3",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-19 ~ 2026-08-19",
-      "recurring": true,
-      "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "30e129f671179f2777b7"
-    },
-    {
-      "source_id": "asiaa",
-      "title": "Intensity Interferometry for Cosmology and Fundamental Physics",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-19",
-      "start_time": "14:20",
-      "end_time": "15:20",
-      "speaker": "Ken Van Tilburg Stanford",
-      "location": "R1203",
-      "url": "https://www.asiaa.sinica.edu.tw/activity/colloquium.php",
-      "kind": "Colloquium",
-      "status": "scheduled",
-      "raw_date": "2026-08-19 Wed 14:20~15:20 R1203",
-      "recurring": false,
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "b61c2e515a1626c07170"
     },
     {
       "source_id": "ncts",
@@ -280,103 +149,8 @@
       "raw_date": "10:00-11:30 on August 20, 25, and 27, 2026, August 20 - 27, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a64245be65d23e1ca88b"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Quantum Fields in Curved Spacetime (Daniel Baumann)",
-      "start_date": "2026-08-20",
-      "end_date": "2026-08-20",
-      "start_time": "10:15",
-      "end_time": "12:15",
-      "speaker": "",
-      "location": "7W3",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-20 ~ 2026-08-20",
-      "recurring": true,
-      "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "8af2fec9d1d635d35231"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-08-20",
-      "end_date": "2026-08-20",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-20 ~ 2026-08-20",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "27a32b0f43730d085358"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Particle Astrophysics (Stathes Paganis)",
-      "start_date": "2026-08-20",
-      "end_date": "2026-08-20",
-      "start_time": "14:15",
-      "end_time": "17:15",
-      "speaker": "",
-      "location": "7W3",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-20 ~ 2026-08-20",
-      "recurring": true,
-      "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "a57741827e2e90b6d094"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-08-24",
-      "end_date": "2026-08-24",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-24 ~ 2026-08-24",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "2961479d4b6d77007265"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-08-24",
-      "end_date": "2026-08-24",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-24 ~ 2026-08-24",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "6bcf36dd4ae726d83d9b"
     },
     {
       "source_id": "asiaa",
@@ -393,7 +167,7 @@
       "raw_date": "2026-08-24~2026-08-28",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "18fa7ca1187fe062c9ea"
     },
     {
@@ -411,7 +185,7 @@
       "raw_date": "Aug 24, 2026 - Aug 28, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d2fcea3f312d6115c483"
     },
     {
@@ -430,7 +204,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "fca674ad6be5915c842f"
     },
     {
@@ -449,7 +223,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "47dca15d7b61358f77c2"
     },
     {
@@ -468,7 +242,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b51852125636f09235aa"
     },
     {
@@ -486,7 +260,7 @@
       "raw_date": "2026/08/25 (Tue.) 15:00~16:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7de965e8c46110606994"
     },
     {
@@ -505,7 +279,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1368f5e27718d25ad8f3"
     },
     {
@@ -524,7 +298,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e19fa0154fb5f79fa716"
     },
     {
@@ -542,7 +316,7 @@
       "raw_date": "2026-08-26 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a3f1472336129420962a"
     },
     {
@@ -560,7 +334,7 @@
       "raw_date": "2026/08/26 (Wed.) 15:00~17:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "24760968924703fc511f"
     },
     {
@@ -578,7 +352,7 @@
       "raw_date": "August 26 - 27, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2dbd7ea0f0b39ee1c102"
     },
     {
@@ -597,27 +371,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "cb7e9e7c5a921d7beac5"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-08-27",
-      "end_date": "2026-08-27",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-27 ~ 2026-08-27",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "5c9832541834563fcb3e"
     },
     {
       "source_id": "lecospa",
@@ -635,7 +390,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "403e5107774d8d3ce56c"
     },
     {
@@ -653,7 +408,7 @@
       "raw_date": "2026/08/27 (Thu.) 15:30~17:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "41d8e80a24e0da1bca81"
     },
     {
@@ -671,27 +426,8 @@
       "raw_date": "10:00-17:00, August 28, and 9:30-15:00, August 29, 2026, August 28 - 29, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "417c85e52a679216bdcf"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-08-31",
-      "end_date": "2026-08-31",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-31 ~ 2026-08-31",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "c223fc5b6eea8b4f0563"
     },
     {
       "source_id": "asiaa",
@@ -708,27 +444,8 @@
       "raw_date": "2026-08-31 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4233d59119ec52f41a7f"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-08-31",
-      "end_date": "2026-08-31",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-08-31 ~ 2026-08-31",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "d95046496ff00e660f8a"
     },
     {
       "source_id": "as_math",
@@ -745,7 +462,7 @@
       "raw_date": "2026/09/01 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "41c2c37a13eaf4914a47"
     },
     {
@@ -764,7 +481,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "19f2e4c6cb5d08c3cc1a"
     },
     {
@@ -783,7 +500,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6da2f0dc0aca486e7d36"
     },
     {
@@ -802,7 +519,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2ec69a98990a43344773"
     },
     {
@@ -820,7 +537,7 @@
       "raw_date": "9:50-15:40, September 2-4, 2026, September 2 - 4, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4ec14d8efadf7b4800e4"
     },
     {
@@ -839,7 +556,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "0dcdd1a0909772400928"
     },
     {
@@ -858,7 +575,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "307accdfc0a5daa4d435"
     },
     {
@@ -876,7 +593,7 @@
       "raw_date": "2026-09-02 Wed 14:20~15:20 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "39878e74588b0f535b93"
     },
     {
@@ -894,7 +611,7 @@
       "raw_date": "15:30 - 16:30, September 2, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "84e3cc679373a19d0341"
     },
     {
@@ -912,7 +629,7 @@
       "raw_date": "2026-09-02~2026-09-04",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3152f792863e0fd73173"
     },
     {
@@ -931,27 +648,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6be8fb682f5fdad6bdca"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-09-03",
-      "end_date": "2026-09-03",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-03 ~ 2026-09-03",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "7351d51713827b25b7de"
     },
     {
       "source_id": "lecospa",
@@ -969,27 +667,8 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9b7dffe78f942cfb4702"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-09-07",
-      "end_date": "2026-09-07",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-07 ~ 2026-09-07",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "9e8814f19e6b89a43573"
     },
     {
       "source_id": "asiaa",
@@ -1006,7 +685,7 @@
       "raw_date": "2026-09-07 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "afb45f14bdcb39e026d5"
     },
     {
@@ -1024,27 +703,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2e1e8dd42107e85105c2"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-09-07",
-      "end_date": "2026-09-07",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-07 ~ 2026-09-07",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "dfcb94ed202dfb02316e"
     },
     {
       "source_id": "as_math",
@@ -1061,7 +721,7 @@
       "raw_date": "2026/09/08 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "c970a38259b24ccd551e"
     },
     {
@@ -1080,7 +740,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "8a30b3a1e2b72d2f6f1b"
     },
     {
@@ -1099,7 +759,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ea8cdcc320ae89b10ab5"
     },
     {
@@ -1118,7 +778,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "df17f39858da817dd75e"
     },
     {
@@ -1136,7 +796,7 @@
       "raw_date": "2026-09-08 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "cc8eadd7e392e311a879"
     },
     {
@@ -1154,7 +814,7 @@
       "raw_date": "2026-09-08 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e0ca58ddf867b3e69c1a"
     },
     {
@@ -1172,7 +832,7 @@
       "raw_date": "2026-09-08 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "044cc9f35ba638860957"
     },
     {
@@ -1190,7 +850,7 @@
       "raw_date": "2026-09-08 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "8267e75c39593aa8735d"
     },
     {
@@ -1208,7 +868,7 @@
       "raw_date": "September 8, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ec42a29c2510b007a07b"
     },
     {
@@ -1227,7 +887,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5a3c97751abae9204117"
     },
     {
@@ -1245,7 +905,7 @@
       "raw_date": "10:00 - 11:15, September 9, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b401d30baf56a76ca9a3"
     },
     {
@@ -1264,7 +924,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d774d3accfe295818704"
     },
     {
@@ -1282,7 +942,7 @@
       "raw_date": "2026-09-09 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "23db64e7a9b7062227d3"
     },
     {
@@ -1300,7 +960,7 @@
       "raw_date": "2026/09/09 (Wed.) 15:00~16:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9b5e803a00a8ad545a97"
     },
     {
@@ -1318,7 +978,7 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "632b4c7bda006c964b74"
     },
     {
@@ -1354,7 +1014,7 @@
       "raw_date": "20:00 - 21:00, September 9, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3c8c482f797a57ecff5a"
     },
     {
@@ -1373,7 +1033,7 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "33d10aa0e6be034c3d5e"
     },
     {
@@ -1391,27 +1051,8 @@
       "raw_date": "2026-09-10 Thu 10:30~11:30 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ce10e10f9931871e3953"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-09-10",
-      "end_date": "2026-09-10",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-10 ~ 2026-09-10",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "e0145ed3bb3c79d7b583"
     },
     {
       "source_id": "lecospa",
@@ -1429,7 +1070,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "fd6a8be18fa15542b2f6"
     },
     {
@@ -1447,7 +1088,7 @@
       "raw_date": "9:00 - 10:30, September 11, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "83180a0e324a3f1a0e12"
     },
     {
@@ -1465,7 +1106,7 @@
       "raw_date": "2026-09-11 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e8ffd4b33cf810a56fda"
     },
     {
@@ -1483,27 +1124,8 @@
       "raw_date": "2026-09-11 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e01859a12c84bf2f8408"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-09-14",
-      "end_date": "2026-09-14",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-14 ~ 2026-09-14",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "64d2aadd04d32a21f58c"
     },
     {
       "source_id": "asiaa",
@@ -1520,7 +1142,7 @@
       "raw_date": "2026-09-14 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "42451531d20127d05bf3"
     },
     {
@@ -1538,27 +1160,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "79b231fbfba71ab2f6d1"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-09-14",
-      "end_date": "2026-09-14",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-14 ~ 2026-09-14",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "d1a3a4da730f8f46bcec"
     },
     {
       "source_id": "as_math",
@@ -1575,7 +1178,7 @@
       "raw_date": "2026/09/15 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "364b8b7013e86b14eb18"
     },
     {
@@ -1594,7 +1197,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "82082c1c1b86b1a3012c"
     },
     {
@@ -1613,7 +1216,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a7273874e2aa43c148ab"
     },
     {
@@ -1632,7 +1235,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5e2054b25e259918a35a"
     },
     {
@@ -1650,7 +1253,7 @@
       "raw_date": "2026-09-15 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6b3e6d398c547a01a221"
     },
     {
@@ -1668,7 +1271,7 @@
       "raw_date": "2026-09-15 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "36c7f67571aa629a79ba"
     },
     {
@@ -1687,7 +1290,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "568eb385ac27bc9c0d84"
     },
     {
@@ -1706,7 +1309,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9777c172f7d961a6d9e4"
     },
     {
@@ -1724,7 +1327,7 @@
       "raw_date": "2026-09-16 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7e706df34096e73e8222"
     },
     {
@@ -1742,7 +1345,7 @@
       "raw_date": "2026/09/16 (Wed.) 15:00~17:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d7deeb7f03e2deef963f"
     },
     {
@@ -1760,7 +1363,7 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6f23b9f1e2d884f582a5"
     },
     {
@@ -1778,7 +1381,7 @@
       "raw_date": "15:30 - 16:30, September 16, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4a34a9cf432293103468"
     },
     {
@@ -1815,27 +1418,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "483206a6a6679e505143"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-09-17",
-      "end_date": "2026-09-17",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-17 ~ 2026-09-17",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "8e714cad7a5d3269da00"
     },
     {
       "source_id": "ncts",
@@ -1852,7 +1436,7 @@
       "raw_date": "13:30 - 14:30, September 17, 2026 (Thursday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "64797d7c4d89c5c8bff4"
     },
     {
@@ -1871,7 +1455,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b85e54870913c6a36f0f"
     },
     {
@@ -1889,7 +1473,7 @@
       "raw_date": "16:00 - 17:00, September 17, 2026 (Thursday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ca6af6b1fb7114ab9028"
     },
     {
@@ -1907,7 +1491,7 @@
       "raw_date": "10:00 - 11:30, September 18, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1528861f1ed51b634766"
     },
     {
@@ -1925,7 +1509,7 @@
       "raw_date": "10:00 - 11:00, September 18, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e41cb94a98da1aed0303"
     },
     {
@@ -1943,7 +1527,7 @@
       "raw_date": "2026/09/18 (Fri.) 10:30~11:45",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ecfa861fe0fe67494987"
     },
     {
@@ -1961,7 +1545,7 @@
       "raw_date": "2026-09-18 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b4cbf2be20d136dafdc7"
     },
     {
@@ -1979,27 +1563,8 @@
       "raw_date": "2026-09-18 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9c5cdb1dcc9731f065ed"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-09-21",
-      "end_date": "2026-09-21",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-21 ~ 2026-09-21",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "1626b42827356e155ea6"
     },
     {
       "source_id": "asiaa",
@@ -2016,7 +1581,7 @@
       "raw_date": "2026-09-21 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2b044ded9529154255dd"
     },
     {
@@ -2034,27 +1599,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e8f3b62e9ee78ac6a3c1"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-09-21",
-      "end_date": "2026-09-21",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-21 ~ 2026-09-21",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "0a643c5b6fff46dad612"
     },
     {
       "source_id": "ncts",
@@ -2071,7 +1617,7 @@
       "raw_date": "September 21, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4ce431d4ac34ebe4a497"
     },
     {
@@ -2089,7 +1635,7 @@
       "raw_date": "2026/09/22 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "fe4350b8c5aaba1432f5"
     },
     {
@@ -2108,7 +1654,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5cdb277c835ac581293d"
     },
     {
@@ -2127,7 +1673,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3feb4978d4db3d67eab8"
     },
     {
@@ -2146,7 +1692,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "cb87e3ea9346d6fbf7ee"
     },
     {
@@ -2164,7 +1710,7 @@
       "raw_date": "14:00 - 16:00, September 22, 2026 (Tuesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "17811e9c7b97064e16c8"
     },
     {
@@ -2182,7 +1728,7 @@
       "raw_date": "2026-09-22 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "85ce4c8cdd6c8c7b54d4"
     },
     {
@@ -2200,7 +1746,7 @@
       "raw_date": "2026-09-22 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "cccca9bf714ca08b1c65"
     },
     {
@@ -2218,7 +1764,7 @@
       "raw_date": "15:00 - 16:00, September 22, 2026 (Tuesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "26ed6a49d728e57d09c0"
     },
     {
@@ -2237,7 +1783,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "8f2678b976fba17ccdab"
     },
     {
@@ -2255,7 +1801,7 @@
       "raw_date": "14:00 - 15:00, September 23, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "72959a756594f05cefb7"
     },
     {
@@ -2274,7 +1820,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5361ad69f9a95cf51642"
     },
     {
@@ -2292,7 +1838,7 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a14674f437a2d62cb28a"
     },
     {
@@ -2328,7 +1874,7 @@
       "raw_date": "16:00 - 17:30, September 23, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b6050ad428fb32d5ed97"
     },
     {
@@ -2346,7 +1892,7 @@
       "raw_date": "10:00 - 11:30, September 24, 2026 (Thursday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e82eb37f0ad87152a5c9"
     },
     {
@@ -2365,27 +1911,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f6f27056c275fc2d1e92"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-09-24",
-      "end_date": "2026-09-24",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-24 ~ 2026-09-24",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "8a590e173051bdd3f731"
     },
     {
       "source_id": "ncts",
@@ -2394,15 +1921,15 @@
       "end_date": "2026-09-24",
       "start_time": "13:30",
       "end_time": "15:00",
-      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "location": "",
       "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=406",
       "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e5e4d5788f70a7fb262e"
     },
     {
@@ -2421,27 +1948,8 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "bfb223dc2c6cf5b7053f"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-09-28",
-      "end_date": "2026-09-28",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-28 ~ 2026-09-28",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "214158bc1771b83e31e3"
     },
     {
       "source_id": "ncts",
@@ -2458,27 +1966,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2bc1f289263f43447c5b"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-09-28",
-      "end_date": "2026-09-28",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-09-28 ~ 2026-09-28",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "3aeca37f067de6c91bf8"
     },
     {
       "source_id": "as_math",
@@ -2495,7 +1984,7 @@
       "raw_date": "2026/09/29 (Tue.) 09:00~2026/10/01 (Thu.) 17:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7be7ae07f184cd59abab"
     },
     {
@@ -2513,7 +2002,7 @@
       "raw_date": "2026/09/29 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4b40786debbaa5fae28f"
     },
     {
@@ -2532,7 +2021,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2d68c0261f425e25f893"
     },
     {
@@ -2550,7 +2039,7 @@
       "raw_date": "2026-09-29 11:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e30116f74d4bfcf4b639"
     },
     {
@@ -2569,7 +2058,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "41d0e432f4b02172e00a"
     },
     {
@@ -2587,7 +2076,7 @@
       "raw_date": "2026-09-29 11:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "337a8e33bbeebd949e8a"
     },
     {
@@ -2606,7 +2095,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "14a33c1f5bd6d00432f5"
     },
     {
@@ -2624,7 +2113,7 @@
       "raw_date": "2026-09-29 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1413790d5728606cda79"
     },
     {
@@ -2642,7 +2131,7 @@
       "raw_date": "2026-09-29 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "07c0edb6c63ac64381fb"
     },
     {
@@ -2660,7 +2149,7 @@
       "raw_date": "15:00 - 16:00, September 29, 2026 (Tuesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "8b7c03a241491d5ff8d9"
     },
     {
@@ -2679,7 +2168,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b956c878a34f776dbfdf"
     },
     {
@@ -2697,7 +2186,7 @@
       "raw_date": "2026/09/30 (Wed.) 10:30~11:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4bfc7f22d7d28aa19ba4"
     },
     {
@@ -2715,7 +2204,7 @@
       "raw_date": "13:30 - 15:00, September 30, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3fcbc6e41325de496990"
     },
     {
@@ -2734,7 +2223,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "09544ad67e2db61402cc"
     },
     {
@@ -2752,7 +2241,7 @@
       "raw_date": "2026/09/30 (Wed.) 15:00~17:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "98debe89919b96b69a5c"
     },
     {
@@ -2770,7 +2259,7 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a1d2f2438d3a4620fc6f"
     },
     {
@@ -2806,7 +2295,7 @@
       "raw_date": "9/30-10/2, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1e477ce4050df01d959d"
     },
     {
@@ -2825,27 +2314,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "62e5e0a73b5a40bab854"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-10-01",
-      "end_date": "2026-10-01",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-01 ~ 2026-10-01",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "d0ce08674c5397a29569"
     },
     {
       "source_id": "as_math",
@@ -2862,7 +2332,7 @@
       "raw_date": "2026/10/01 (Thu.) 13:00~15:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4ccd2d23a0950a5c17ca"
     },
     {
@@ -2872,15 +2342,15 @@
       "end_date": "2026-10-01",
       "start_time": "13:30",
       "end_time": "15:00",
-      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "location": "",
       "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=406",
       "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "89e4b4bc9c483bb295c1"
     },
     {
@@ -2899,7 +2369,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9e562916cd30d2660d51"
     },
     {
@@ -2935,7 +2405,7 @@
       "raw_date": "2026/10/01 (Thu.) 16:00~18:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1491debc9beb4c6c63a2"
     },
     {
@@ -2953,7 +2423,7 @@
       "raw_date": "16:00 - 17:00, October 1, 2026 (Thursday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5ebaa75cfe443b9e8f14"
     },
     {
@@ -2963,15 +2433,15 @@
       "end_date": "2026-10-02",
       "start_time": "09:00",
       "end_time": "10:00",
-      "speaker": "Aaron Landesman (Harvard University)",
-      "location": "Room 505+Online Meeting, Cosmology Building, NTU (臺灣大學次震宇宙館 505室+線上會議)",
+      "speaker": "Aaron Landesman ( Harvard University )",
+      "location": "",
       "url": "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3192",
       "kind": "學術活動",
       "status": "scheduled",
       "raw_date": "9:00 - 10:00, October 2, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "290f721af0cb7fdd7e93"
     },
     {
@@ -2989,7 +2459,7 @@
       "raw_date": "2026/10/02 (Fri.) 10:30~11:45",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4caf2141288969994dc5"
     },
     {
@@ -3007,7 +2477,7 @@
       "raw_date": "2026-10-02 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1704dc38611f09a0a24c"
     },
     {
@@ -3025,7 +2495,7 @@
       "raw_date": "2026-10-02 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a2af89c1d2031700a3ee"
     },
     {
@@ -3043,7 +2513,7 @@
       "raw_date": "2026-10-02 14:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "31e1fb0aa3b9fe2d5aa7"
     },
     {
@@ -3061,27 +2531,8 @@
       "raw_date": "2026-10-02 14:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2fc347668005b9854a0b"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-10-05",
-      "end_date": "2026-10-05",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-05 ~ 2026-10-05",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "73fe767cc42ec92ffb68"
     },
     {
       "source_id": "asiaa",
@@ -3098,7 +2549,7 @@
       "raw_date": "2026-10-05 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "03085e6328d820ea4de4"
     },
     {
@@ -3116,27 +2567,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e3d6b37ba1e1b90cf1e4"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-10-05",
-      "end_date": "2026-10-05",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-05 ~ 2026-10-05",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "8e9a153e56cb99cfad83"
     },
     {
       "source_id": "ntu_math",
@@ -3153,7 +2585,7 @@
       "raw_date": "2026-10-05 (星期一) 15:30 - 16:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2c1bb712854a8b06971d"
     },
     {
@@ -3171,7 +2603,7 @@
       "raw_date": "2026/10/06 (Tue.) 10:00~13:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f9b9e6ce98ad6df44e5f"
     },
     {
@@ -3190,7 +2622,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e5944fa0658af2ee173d"
     },
     {
@@ -3209,7 +2641,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "129cb1201dce8ab18600"
     },
     {
@@ -3228,7 +2660,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ac9ffb7c7a388855d689"
     },
     {
@@ -3246,26 +2678,26 @@
       "raw_date": "2026-10-06 14:20",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3236ec37fc3c8f857988"
     },
     {
       "source_id": "ncts",
-      "title": "On Linear and Bilinear Bochner-Riesz Means on Métivier Groups",
+      "title": "Linear and Bilinear Bochner-Riesz Means on Métivier Groups",
       "start_date": "2026-10-06",
       "end_date": "2026-10-06",
-      "start_time": "15:00",
+      "start_time": "14:30",
       "end_time": "16:30",
       "speaker": "Joydwip Singh (Indian Institute of Science Education and Research (IISER) Mohali)",
       "location": "Room 509+Online Meeting, Cosmology Building, NTU (臺灣大學次震宇宙館 509室+線上會議)",
       "url": "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3198",
       "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "15:00 - 16:30, October 6, 2026 (Tuesday)",
+      "raw_date": "14:30 - 16:30, October 6, 2026 (Tuesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "bf95dff79f793191666e"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "aeac5a9ef2b94cc3fe68"
     },
     {
       "source_id": "lecospa",
@@ -3283,7 +2715,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "853642657ebdf752ccfc"
     },
     {
@@ -3301,7 +2733,7 @@
       "raw_date": "14:00 - 15:00, October 7, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f71e01b8ae6f7d8c6a52"
     },
     {
@@ -3320,7 +2752,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "781241776c6b6361d570"
     },
     {
@@ -3338,7 +2770,7 @@
       "raw_date": "15:00 - 16:30, October 7, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "38c0c563b7d667970bbe"
     },
     {
@@ -3356,26 +2788,8 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9b3075b5bae7ddf8ae66"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-10-07",
-      "end_date": "2026-10-07",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "f4a140dfce78528431eb"
     },
     {
       "source_id": "ncts",
@@ -3392,7 +2806,7 @@
       "raw_date": "20:00 - 21:00, October 7, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "882aacfac586105fd8c5"
     },
     {
@@ -3411,27 +2825,26 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5acd07149f6b8a645316"
     },
     {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
+      "source_id": "as_math",
+      "title": "The six operations and constructible sheaves",
       "start_date": "2026-10-08",
       "end_date": "2026-10-08",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "speaker": "Hung-Chun Yu (Florida State University)",
+      "location": "Seminar Room 638, Institute of Mathematics (NTU Campus)",
+      "url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16160",
+      "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "2026-10-08 ~ 2026-10-08",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
+      "raw_date": "2026/10/08 (Thu.) 13:00~15:00",
+      "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "87ba6a003704c46a9e88"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "c5badbcbf28e2e984608"
     },
     {
       "source_id": "ncts",
@@ -3440,15 +2853,15 @@
       "end_date": "2026-10-08",
       "start_time": "13:30",
       "end_time": "15:00",
-      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "location": "",
       "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=406",
       "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
+      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "2104ddb3ec804d601a99"
     },
     {
@@ -3467,7 +2880,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "c07116729195a5e45907"
     },
     {
@@ -3485,27 +2898,8 @@
       "raw_date": "2026-10-08 15:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f6c5d51c1006356f7f08"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-10-12",
-      "end_date": "2026-10-12",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-12 ~ 2026-10-12",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "6b68077c54690a4a015c"
     },
     {
       "source_id": "asiaa",
@@ -3522,7 +2916,7 @@
       "raw_date": "2026-10-12 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7c4edd6b7efcb3d0c0a2"
     },
     {
@@ -3540,27 +2934,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4bcafad8be7d3f6f80fd"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-10-12",
-      "end_date": "2026-10-12",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-12 ~ 2026-10-12",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "605a1909ab2bccaf3e8d"
     },
     {
       "source_id": "lecospa",
@@ -3578,7 +2953,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "23571b670ca6bf9cca6f"
     },
     {
@@ -3597,7 +2972,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6362dc91a764b9117c1d"
     },
     {
@@ -3616,8 +2991,26 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "46eb12c2879b846661af"
+    },
+    {
+      "source_id": "ncts",
+      "title": "From Gullies to Curves: Dimension Reduction in a Wildfire Model",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-13",
+      "start_time": "15:00",
+      "end_time": "16:30",
+      "speaker": "Lorenzo De Gaspari (University of Western Australia)",
+      "location": "Room 509+Online Meeting, Cosmology Building, NTU (臺灣大學次震宇宙館 509室+線上會議)",
+      "url": "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3202",
+      "kind": "學術活動",
+      "status": "scheduled",
+      "raw_date": "15:00 - 16:30, October 13, 2026 (Tuesday)",
+      "recurring": false,
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "2802facdb1a960ab4bb5"
     },
     {
       "source_id": "lecospa",
@@ -3635,7 +3028,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "89ed653624e2745513b9"
     },
     {
@@ -3653,7 +3046,7 @@
       "raw_date": "13:30 - 15:00, October 14, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7429c664d6c1e85246ad"
     },
     {
@@ -3672,7 +3065,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "57eacae52b22a0bc04d7"
     },
     {
@@ -3690,7 +3083,7 @@
       "raw_date": "2026-10-14 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3786169bda3986074e0b"
     },
     {
@@ -3708,26 +3101,8 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d45a10850030177827ea"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-10-14",
-      "end_date": "2026-10-14",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "0925da17e4a0255b3ca3"
     },
     {
       "source_id": "ncts",
@@ -3744,7 +3119,7 @@
       "raw_date": "20:00 - 21:00, October 14, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5847751b1efebfdd2337"
     },
     {
@@ -3763,27 +3138,26 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5276b6ddf9ba3e54c82b"
     },
     {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
+      "source_id": "ncts",
+      "title": "Elliptic Curves in Mathematical Cryptography",
       "start_date": "2026-10-15",
       "end_date": "2026-10-15",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
+      "location": "",
+      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=406",
+      "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "2026-10-15 ~ 2026-10-15",
+      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 15, 2026",
       "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "6f6cd66864bda70c2910"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "ff519a1583079ce056d2"
     },
     {
       "source_id": "ncts",
@@ -3800,26 +3174,8 @@
       "raw_date": "13:30 - 14:30, October 15, 2026 (Thursday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "548ceb6e91d705601029"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Elliptic Curves in Mathematical Cryptography",
-      "start_date": "2026-10-15",
-      "end_date": "2026-10-15",
-      "start_time": "13:30",
-      "end_time": "15:00",
-      "speaker": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=406",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Thursday from 13:30 to 15:00, from September 24 to October 15, 2026, September 24 - October 1, 2026",
-      "recurring": true,
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "ff519a1583079ce056d2"
     },
     {
       "source_id": "lecospa",
@@ -3837,7 +3193,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5fc4e4eb8e5f4e096d22"
     },
     {
@@ -3855,27 +3211,26 @@
       "raw_date": "2026-10-15 15:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d62edd7648aa252f1c42"
     },
     {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-10-19",
-      "end_date": "2026-10-19",
-      "start_time": "10:00",
+      "source_id": "as_math",
+      "title": "P-minimal surfaces in 3-dimensional pseudohermitian manifold",
+      "start_date": "2026-10-16",
+      "end_date": "2026-10-16",
+      "start_time": "11:00",
       "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
+      "speaker": "Pak Tung Ho (Tamkang University)",
+      "location": "Seminar Room 638, Institute of Mathematics (NTU Campus)",
+      "url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16158",
+      "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "2026-10-19 ~ 2026-10-19",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
+      "raw_date": "2026/10/16 (Fri.) 11:00~12:00",
+      "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "67c0928309f7c944bac6"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "ad162a3b0f53236dcc07"
     },
     {
       "source_id": "iams",
@@ -3892,7 +3247,7 @@
       "raw_date": "2026-10-19 11:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f1b950210a6a74aee580"
     },
     {
@@ -3910,7 +3265,7 @@
       "raw_date": "2026-10-19 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "06e74038db2e87d52949"
     },
     {
@@ -3928,27 +3283,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "15439027d24657e5f80e"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-10-19",
-      "end_date": "2026-10-19",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-19 ~ 2026-10-19",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "641867c6dd3214a9b47e"
     },
     {
       "source_id": "as_math",
@@ -3965,7 +3301,7 @@
       "raw_date": "2026/10/20 (Tue.) 09:30~17:00",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e3e35906b79cac5210f6"
     },
     {
@@ -3984,7 +3320,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "bfa07132c70f48d642e5"
     },
     {
@@ -4003,7 +3339,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "800712e2ebaa70ad42c9"
     },
     {
@@ -4022,7 +3358,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "71c6ae1ebb54e05ec816"
     },
     {
@@ -4041,7 +3377,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "10be09e9c4b8924105ea"
     },
     {
@@ -4060,7 +3396,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ab79bb08c3d201d46577"
     },
     {
@@ -4078,7 +3414,7 @@
       "raw_date": "2026-10-21 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3f57a65d9cdab67e5da5"
     },
     {
@@ -4096,26 +3432,8 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ef54793295c4a06949c3"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-10-21",
-      "end_date": "2026-10-21",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "4387fe58fa7c6df3a54e"
     },
     {
       "source_id": "as_math",
@@ -4132,7 +3450,7 @@
       "raw_date": "2026/10/21 (Wed.)~2026/10/23 (Fri.)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b67880363adde45c875f"
     },
     {
@@ -4151,27 +3469,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "059b7f3a5b44bc36b358"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-10-22",
-      "end_date": "2026-10-22",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-22 ~ 2026-10-22",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "ab5618080dc2358219e7"
     },
     {
       "source_id": "lecospa",
@@ -4189,7 +3488,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "718f76a92cece333e9d2"
     },
     {
@@ -4207,27 +3506,26 @@
       "raw_date": "10:00 - 11:00, October 23, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "c9642f939e98d42b5505"
     },
     {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
+      "source_id": "as_math",
+      "title": "Twisted rational maps and its application in skew products",
+      "start_date": "2026-10-23",
+      "end_date": "2026-10-23",
+      "start_time": "10:30",
+      "end_time": "11:45",
+      "speaker": "Hongming Nie (State University of New York at Stony Brook)",
+      "location": "Seminar Room 617, Institute of Mathematics (NTU Campus)",
+      "url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16159",
+      "kind": "學術活動",
       "status": "scheduled",
-      "raw_date": "2026-10-26 ~ 2026-10-26",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
+      "raw_date": "2026/10/23 (Fri.) 10:30~11:45",
+      "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "0ebe73793d4fea4efac4"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "36b179570ee796225693"
     },
     {
       "source_id": "ncts",
@@ -4244,27 +3542,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "7f2db7ea38a0da321dbd"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-26 ~ 2026-10-26",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "a0a00524b62f11f82a58"
     },
     {
       "source_id": "iams",
@@ -4281,7 +3560,7 @@
       "raw_date": "Oct. 26~30, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "62919ac9c1a9652bbdea"
     },
     {
@@ -4300,7 +3579,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5f0cc573d0b064503db8"
     },
     {
@@ -4319,7 +3598,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "6fa2c94d65c601994ca1"
     },
     {
@@ -4338,7 +3617,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "acb15e7c79c42a331654"
     },
     {
@@ -4357,7 +3636,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9f317a6de765c1fb3f37"
     },
     {
@@ -4376,7 +3655,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "73341124b7c6228600dc"
     },
     {
@@ -4394,7 +3673,7 @@
       "raw_date": "2026-10-28 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "0d6c9bbe3c2ceaf9a4d4"
     },
     {
@@ -4412,7 +3691,7 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3df6f085dd022f17563a"
     },
     {
@@ -4430,26 +3709,8 @@
       "raw_date": "15:30 - 16:30, October 28, 2026 (Wednesday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "033e807361d4c6e21fa3"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "8fc962c6ad0e3407195d"
     },
     {
       "source_id": "lecospa",
@@ -4467,27 +3728,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4c35e7f4cf6714ad3fe6"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-10-29",
-      "end_date": "2026-10-29",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-10-29 ~ 2026-10-29",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "9f3296c01133b7b6ce2c"
     },
     {
       "source_id": "lecospa",
@@ -4505,27 +3747,8 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "4a2ff6b0583963a76abb"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-11-02",
-      "end_date": "2026-11-02",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-02 ~ 2026-11-02",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "7c81a95e9d70b3141fb6"
     },
     {
       "source_id": "asiaa",
@@ -4542,7 +3765,7 @@
       "raw_date": "2026-11-02 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "bdb75521aa0ea0d0e1d9"
     },
     {
@@ -4560,27 +3783,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "cfe1df21884d5115e97b"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-11-02",
-      "end_date": "2026-11-02",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-02 ~ 2026-11-02",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "9532983c73c94c3177cd"
     },
     {
       "source_id": "lecospa",
@@ -4598,7 +3802,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "9155fd3794c1d7e00997"
     },
     {
@@ -4617,7 +3821,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "a3d51b774b154ee8f643"
     },
     {
@@ -4636,7 +3840,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "c790a2ab62f345c561ce"
     },
     {
@@ -4655,7 +3859,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "aa2a31ea4e872d8bd5f4"
     },
     {
@@ -4674,7 +3878,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d90b672fe5b5d79632d4"
     },
     {
@@ -4692,7 +3896,7 @@
       "raw_date": "2026-11-04 Wed 14:20~15:20 R1203",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f5196b9bb470635ac342"
     },
     {
@@ -4710,26 +3914,8 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "5fa1ac98516df9391f32"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-11-04",
-      "end_date": "2026-11-04",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "d38c7036364098b289ae"
     },
     {
       "source_id": "lecospa",
@@ -4747,27 +3933,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "f1f11b7e699594ee28a4"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-11-05",
-      "end_date": "2026-11-05",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-05 ~ 2026-11-05",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "ee0f178d8c7f383c3274"
     },
     {
       "source_id": "lecospa",
@@ -4785,7 +3952,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "0a25771e6765b010a340"
     },
     {
@@ -4803,7 +3970,7 @@
       "raw_date": "2026-11-05 15:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "214919e5f86dd023c23a"
     },
     {
@@ -4821,27 +3988,8 @@
       "raw_date": "10:00 - 11:00, November 6, 2026 (Friday)",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "0b9e80f7ce62cac1b78d"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
-      "start_date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-09 ~ 2026-11-09",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "3c0af03a53271c43c248"
     },
     {
       "source_id": "asiaa",
@@ -4858,7 +4006,7 @@
       "raw_date": "2026-11-09 Mon 12:00~12:40 R1412",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "1e3d8a2d8eb7c9bedf24"
     },
     {
@@ -4876,27 +4024,8 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "af87d15703128eab59d6"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "start_time": "14:00",
-      "end_time": "15:30",
-      "speaker": "",
-      "location": "",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-09 ~ 2026-11-09",
-      "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "cfb96ea88a9f56cac723"
     },
     {
       "source_id": "asiaa",
@@ -4913,7 +4042,7 @@
       "raw_date": "2026-11-09~2026-11-13",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ce0a80815925f62cafde"
     },
     {
@@ -4931,7 +4060,7 @@
       "raw_date": "November 9 - 11, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "c1d663a9b86b078e7200"
     },
     {
@@ -4950,7 +4079,7 @@
       "recurring": true,
       "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "927d80a36d5c96afc412"
     },
     {
@@ -4969,7 +4098,7 @@
       "recurring": true,
       "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "3f033d2cb25b14d9d393"
     },
     {
@@ -4988,7 +4117,7 @@
       "recurring": true,
       "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e34aa3558aa614c2b23c"
     },
     {
@@ -5007,7 +4136,7 @@
       "recurring": true,
       "calendar_event_id": "3t0gb62hamckor08djogas95ek",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "24f067dbd19840d8add3"
     },
     {
@@ -5026,7 +4155,7 @@
       "recurring": true,
       "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "fa0e9ace0402a76881cb"
     },
     {
@@ -5044,26 +4173,8 @@
       "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "aca3ef86ee677cf53018"
-    },
-    {
-      "source_id": "ncts",
-      "title": "Taiwan Mathematics School: Algebraic Surfaces_105 academic year",
-      "start_date": "2026-11-11",
-      "end_date": "2026-11-11",
-      "start_time": "15:30",
-      "end_time": "17:20",
-      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "location": "",
-      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
-      "kind": "學術活動",
-      "status": "scheduled",
-      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
-      "recurring": true,
-      "stale": true,
-      "seen_at": "2026-10-01T11:44:49+08:00",
-      "id": "cadee097c05a0f375312"
     },
     {
       "source_id": "lecospa",
@@ -5081,27 +4192,8 @@
       "recurring": true,
       "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "ad7e5af629791339df96"
-    },
-    {
-      "source_id": "lecospa",
-      "title": "Group Meeting (Nam)",
-      "start_date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "start_time": "12:00",
-      "end_time": "14:30",
-      "speaker": "",
-      "location": "7S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
-      "status": "scheduled",
-      "raw_date": "2026-11-12 ~ 2026-11-12",
-      "recurring": true,
-      "calendar_event_id": "76o6jl0g4sv153acm6qkgg0p2b_R20260226T040000",
-      "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "46c72ac6cbb97ab2821c"
     },
     {
       "source_id": "lecospa",
@@ -5119,7 +4211,7 @@
       "recurring": true,
       "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "901c8337423c6e1f5650"
     },
     {
@@ -5137,7 +4229,7 @@
       "raw_date": "2026-11-12 15:30",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "e1b9eb792aac60a916d4"
     },
     {
@@ -5155,7 +4247,7 @@
       "raw_date": "November 14 - 15, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "68a435192f949523aab5"
     },
     {
@@ -5173,27 +4265,26 @@
       "raw_date": "November 14 - 15, 2026",
       "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "d1b5b550bf890bac9f33"
     },
     {
-      "source_id": "lecospa",
-      "title": "Group Meeting(Pisin)",
+      "source_id": "asiaa",
+      "title": "Flash Talk Session #4",
       "start_date": "2026-11-16",
       "end_date": "2026-11-16",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "speaker": "",
-      "location": "8S1",
-      "url": "https://www.lecospa.ntu.edu.tw/calendar",
-      "kind": "行事曆活動",
+      "start_time": "12:00",
+      "end_time": "12:40",
+      "speaker": "TBD ASIAA",
+      "location": "R1412",
+      "url": "https://www.asiaa.sinica.edu.tw/activity/lunchtalk.php",
+      "kind": "午餐演講",
       "status": "scheduled",
-      "raw_date": "2026-11-16 ~ 2026-11-16",
-      "recurring": true,
-      "calendar_event_id": "1oqm1ds1qf5sevl3gj1dq407he",
+      "raw_date": "2026-11-16 Mon 12:00~12:40 R1412",
+      "recurring": false,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "0421757a8242469371ef"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "d39b01bf83821aa0424b"
     },
     {
       "source_id": "ncts",
@@ -5210,27 +4301,195 @@
       "raw_date": "Every Monday 13:20-16:20, from September 7 to December 14, 2026, September 7 - December 14, 2026",
       "recurring": true,
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
+      "seen_at": "2026-10-05T14:49:09+08:00",
       "id": "b72000e4bb2714954a0f"
     },
     {
       "source_id": "lecospa",
-      "title": "Group Meeting(Nam)",
-      "start_date": "2026-11-16",
-      "end_date": "2026-11-16",
-      "start_time": "14:00",
-      "end_time": "15:30",
+      "title": "Quantum Fields in Curved Spacetime (Daniel Baumann)",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "start_time": "10:15",
+      "end_time": "12:15",
       "speaker": "",
-      "location": "",
+      "location": "7W3",
       "url": "https://www.lecospa.ntu.edu.tw/calendar",
       "kind": "行事曆活動",
       "status": "scheduled",
-      "raw_date": "2026-11-16 ~ 2026-11-16",
+      "raw_date": "2026-11-17 ~ 2026-11-17",
       "recurring": true,
-      "calendar_event_id": "096891ar1uig61jd10cd71kl7s",
+      "calendar_event_id": "7m77vn2gstrcn6afl1j5fnp0ib",
       "stale": false,
-      "seen_at": "2026-10-02T09:59:01+08:00",
-      "id": "8c548ac53a9886744d52"
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "013afa0a30500f6fc653"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "Journal Club",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "speaker": "",
+      "location": "8W1",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-17 ~ 2026-11-17",
+      "recurring": true,
+      "calendar_event_id": "9985jqug25asbjuu5tlv61jqii_R20250916T030000",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "0b74f0a84ae108f75c1e"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "Advanced General Relativity(Chia-Hsien Shen)",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "start_time": "13:15",
+      "end_time": "16:15",
+      "speaker": "",
+      "location": "7W3",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-17 ~ 2026-11-17",
+      "recurring": true,
+      "calendar_event_id": "17fki4dbql04jl5ubre5bgs4v3",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "99b68b0abef1347e2009"
+    },
+    {
+      "source_id": "ncts",
+      "title": "Star-Norm Bounds and Total Variation Flow, with Applications to Crystallographic Imaging",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "speaker": "Prashant Athavale (Clarkson University)",
+      "location": "Room 509+Online Meeting, Cosmology Building, NTU (臺灣大學次震宇宙館 509室+線上會議)",
+      "url": "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3184",
+      "kind": "學術活動",
+      "status": "scheduled",
+      "raw_date": "15:00 - 16:00, November 17, 2026 (Tuesday)",
+      "recurring": false,
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "eebd933643d0d3a26758"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "Coffee",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "speaker": "",
+      "location": "7F Lobby",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-18 ~ 2026-11-18",
+      "recurring": true,
+      "calendar_event_id": "3t0gb62hamckor08djogas95ek",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "e1049a41160de19095f7"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "self-exploratory experimental physics (Ⅰ)  (Nam)",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "start_time": "14:15",
+      "end_time": "17:15",
+      "speaker": "",
+      "location": "7W3",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-18 ~ 2026-11-18",
+      "recurring": true,
+      "calendar_event_id": "1rdf93ghg98fclke34or06uv0c_R20260218T061500",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "365baedf8cbfbaf025a5"
+    },
+    {
+      "source_id": "ncts",
+      "title": "Taiwan Mathematics School: Algebraic Surfaces_115 academic year",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "start_time": "15:30",
+      "end_time": "17:20",
+      "speaker": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
+      "location": "",
+      "url": "https://ncts.ntu.edu.tw/events_3_detail.php?nid=409",
+      "kind": "學術活動",
+      "status": "scheduled",
+      "raw_date": "Every Wednesday 15:30–17:20, from September 9 to December 16, 2026, September 9 - December 16, 2026",
+      "recurring": true,
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "d262aca42c8b08d80650"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "Quantum Fields in Curved Spacetime (Daniel Baumann)",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "start_time": "10:15",
+      "end_time": "12:15",
+      "speaker": "",
+      "location": "7W3",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-19 ~ 2026-11-19",
+      "recurring": true,
+      "calendar_event_id": "46s47vd0od4lnj3cn37i8r1ghb",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "a5dd00484ed4d73515aa"
+    },
+    {
+      "source_id": "lecospa",
+      "title": "Particle Astrophysics (Stathes Paganis)",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "start_time": "14:15",
+      "end_time": "17:15",
+      "speaker": "",
+      "location": "7W3",
+      "url": "https://www.lecospa.ntu.edu.tw/calendar",
+      "kind": "行事曆活動",
+      "status": "scheduled",
+      "raw_date": "2026-11-19 ~ 2026-11-19",
+      "recurring": true,
+      "calendar_event_id": "3r5fi66551ve9ja9ah2trgtkdt",
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "833b015d82cf2ad60e95"
+    },
+    {
+      "source_id": "iams",
+      "title": "化學系意芳化學講座",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "start_time": "15:30",
+      "end_time": null,
+      "speaker": "講者待確認",
+      "location": "浦大邦紀念講堂（臺大校園內）",
+      "url": "https://www.iams.sinica.edu.tw/events",
+      "kind": "演講",
+      "status": "scheduled",
+      "raw_date": "2026-11-19 15:30",
+      "recurring": false,
+      "stale": false,
+      "seen_at": "2026-10-05T14:49:09+08:00",
+      "id": "3495418d4b28e5cf1571"
     }
   ]
 }

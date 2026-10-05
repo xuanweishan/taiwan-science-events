@@ -65,6 +65,9 @@ jobs:
       - name: Validate restored or initial JSON
         run: python -m json.tool dist/data/events.json > /dev/null
 
+      - name: Exclude internal meetings from restored data
+        run: python event_filters.py dist/data/events.json
+
       - name: Update event data
         if: github.event_name != 'push'
         env:

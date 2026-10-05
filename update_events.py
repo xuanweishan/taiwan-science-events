@@ -26,11 +26,12 @@ from lzstring import LZString
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from urllib3.util.ssl_ import create_urllib3_context
+from event_filters import exclude_internal_events, is_internal_event
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo('Asia/Taipei')
 UA = 'TaiwanScienceAgenda/2.0 (public academic event index)'
-VERSION = '2.1.2'
+VERSION = '2.1.3'
 AS = 'https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088'
 SOURCES = [
     dict(id='ncts', name='國家理論科學中心', short_name='NCTS 數學組', url='https://ncts.ntu.edu.tw/',
@@ -289,6 +290,7 @@ class Collector:
 
     def add(self,title,raw,url,speaker='',location='',kind='學術活動'):
         self.recognized+=1
+        if is_internal_event(title):return
         try:
             e=event(self.source['id'],title,raw,url,speaker,location,kind)
             if e['end_date']<self.lower.isoformat() or e['start_date']>self.upper.isoformat():return
@@ -439,6 +441,9 @@ class Collector:
             records=json.loads(LZString.decompressFromUTF16(UTF16Values(group['compressedEvents'])))
             for item in records:
                 try:
+                    if is_internal_event(item['title']):
+                        self.recognized+=1
+                        continue
                     tz=ZoneInfo(item.get('timeZone','Asia/Taipei'))
                     start=datetime.fromisoformat(item['start'].replace('Z','+00:00'))
                     end=datetime.fromisoformat(item.get('end',item['start']).replace('Z','+00:00'))
@@ -527,6 +532,8 @@ def stable_key(e):
     return (e['source_id'],e['start_date'],e.get('start_time'),title)
 
 def merge(previous,results,now,today):
+    previous=exclude_internal_events(previous)
+    results=[dict(result,events=exclude_internal_events(result)['events']) for result in results]
     output=[];states=[];lower=(today-timedelta(days=45)).isoformat();upper=(today+timedelta(days=45)).isoformat()
     old_states={s['id']:s for s in previous.get('sources',[])}
     for result in results:

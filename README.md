@@ -66,6 +66,24 @@ When changing application code, do not include locally generated data changes
 unless intentionally updating the initial seed. Generated reports and offline
 previews are ignored by Git.
 
+## Internal team meetings
+
+The shared `event_filters.py` rules exclude titles that are clearly named Group Meeting,
+Lab/Laboratory Meeting, Team Meeting, Internal Meeting, Staff Meeting, and
+explicit Chinese equivalents such as 組會、實驗室會議、團隊會議、內部會議.
+The entire title must match an internal meeting label (optionally prefixed with
+Research/Weekly/Regular, or followed by a group name in parentheses/brackets).
+Chinese labels may include a short team-name prefix. Matching ignores case,
+spacing and hyphen variants. Mentioning these phrases inside a longer lecture
+title is not sufficient for exclusion. Generic meetings, seminars,
+conferences and journal clubs are retained unless their titles also match an
+internal-team rule. These title rules do not infer access restrictions from a
+speaker's name or an event's location.
+
+Filtering applies before calendar recurrence expansion, when merging older
+records (including failed or unselected sources), and when restoring artifacts
+for a code-only Pages deployment. Old snapshots cannot reintroduce those events.
+
 ## ASIAA mode
 
 The workflow runs the updater with `--asiaa-access public-html`, matching the previously tested public-HTML mode. The updater still records the site's robots directives in its diagnostic report; HTTP success is not treated as authorization.
