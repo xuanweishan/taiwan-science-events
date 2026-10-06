@@ -1,7 +1,7 @@
 'use strict';
 const I18N={
- zh:{title:'臺灣學術活動週覽',subtitle:'數學、物理與天文的近期學術活動。',range:'範圍',upcoming:'未來七天',recent:'過去七天',institution:'機構',allInstitutions:'全部機構',search:'搜尋',sourceStatus:'來源狀態',footer:'活動資訊以原始機構公告為準。',events:'筆活動',generated:'資料產生',noEvents:'此篩選條件下沒有活動。',partial:'部分來源未完整更新，請查看來源狀態。',recurring:'定期活動',today:'今天',backToTop:'回到頂部'},
- en:{title:'Taiwan Science Agenda',subtitle:'Recent academic events in mathematics, physics and astronomy.',range:'Range',upcoming:'Next 7 days',recent:'Past 7 days',institution:'Institution',allInstitutions:'All institutions',search:'Search',sourceStatus:'Source status',footer:'Please refer to the original institution announcement for authoritative event information.',events:'events',generated:'Generated',noEvents:'No events match these filters.',partial:'Some sources were not fully updated. See source status.',recurring:'Recurring',today:'Today',backToTop:'Back to top'}
+ zh:{title:'醉月湖數理週覽',subtitle:'數學、物理與天文的近期學術活動。',range:'範圍',upcoming:'未來七天',recent:'過去七天',institution:'機構',allInstitutions:'全部機構',search:'搜尋',sourceStatus:'來源狀態',footer:'活動資訊以原始機構公告為準。',events:'筆活動',generated:'資料產生',noEvents:'此篩選條件下沒有活動。',partial:'部分來源未完整更新，請查看來源狀態。',recurring:'定期活動',today:'今天',backToTop:'回到頂部'},
+ en:{title:'Drunken Moon Lake Math & Physics Weekly',subtitle:'Recent academic events in mathematics, physics and astronomy.',range:'Range',upcoming:'Next 7 days',recent:'Past 7 days',institution:'Institution',allInstitutions:'All institutions',search:'Search',sourceStatus:'Source status',footer:'Please refer to the original institution announcement for authoritative event information.',events:'events',generated:'Generated',noEvents:'No events match these filters.',partial:'Some sources were not fully updated. See source status.',recurring:'Recurring',today:'Today',backToTop:'Back to top'}
 };
 const SOURCE_NAMES_EN={
  ncts:{short:'NCTS Mathematics',name:'National Center for Theoretical Sciences — Mathematics Division'},
